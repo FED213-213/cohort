@@ -13,7 +13,7 @@
 
 
     <header class="navigation" aria-label="Navigation area"> 
-        <nav>
+        <nav class="nav-area">
 
             <div class="nav-container" aria-label="Discord Logo">
                 <a href="/" class="logo">
@@ -117,18 +117,27 @@
         </nav>
     </header>
 
-
+<main>
 <header class="app-header">
+    <header class="mobile-app-header">
   <a href="/" class="brand-logo" aria-label="Dashboard Home">
     <!-- Inline SVG blends cleanly with any background -->
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="12" />
     </svg>
   </a>
-
+   <button type="button" class="profile-trigger" aria-label="Open user menu">
+    <span>Profile</span>
+  </button>
+</header>
+<a href="/" class="brand-logo" aria-label="Dashboard Home">
+    <!-- Inline SVG blends cleanly with any background -->
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <circle cx="12" cy="12" r="12" />
+    </svg>
+  </a>
   
-
-  <nav aria-label="Primary">
+  <nav aria-label="Primary" class="primary">
     <ul class="nav-links">
       <li><a href="/home" aria-current="page">Home</a></li>
       <li><a href="/communities">Communities</a></li>
@@ -138,13 +147,13 @@
     </ul>
   </nav>
 
-   <button type="button" class="profile-trigger" aria-label="Open user menu">
+ <button type="button" class="profile-trigger" aria-label="Open user menu">
     <span>Profile</span>
   </button>
- 
+
 </header>
 
-<main class="bento-grid">
+<section class="bento-grid">
   <aside class="panel panel-left" aria-label="Channels and Navigation">
     <h2>Channels</h2>
   </aside>
@@ -161,13 +170,14 @@
       <h2>Quick Stats</h2>
     </section>
   </aside>
-</main>
-
+</section>
 
 
 <section class="grid-flex" >
 
 </section>
+</main>
+
 </body>
 
 </html>
